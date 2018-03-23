@@ -1,0 +1,146 @@
+/* general css */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Arial, Georgia, sans-serif;
+	font-size: 16px;
+	background-color: #2a2a2a; /* use darker color */
+}
+
+.container
+{
+	width: 75%;
+	margin: 20px auto 20px;
+	background-color: white;
+	overflow: hidden;
+}
+
+a, a:hover /* add something to hover */
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul
+{
+	list-style: none;
+}
+
+.row-fluid
+{
+	border-bottom: 1px solid #dddddd;
+}
+
+/* header */
+
+header
+{
+	padding: 1.5em;
+}
+
+#profile-pic
+{
+	margin-left: 20px; 
+	border: 1px solid #dddddd;
+	width: 11%;
+	float: left;
+}
+
+h1 .nombre
+{
+	/*display: inline-block; */
+	margin-left: 15px;
+}
+
+
+.datos
+{
+	text-align: right;
+}
+
+
+/* body */
+
+
+.skill
+{
+	padding: 1em;
+	margin: 1.2em;
+	display: inline-block;
+}
+
+.skill ul li
+{
+	padding-left::; 0.5em;
+}
+
+section
+{
+	padding: 1em;
+}
+
+article
+{
+	padding: 1em;
+}
+
+h6
+{
+	font-style: italic;
+}
+
+#fortytwo
+{
+	padding-top: 1em;
+}
+
+
+/* footer */
+
+footer
+{
+	float: right;
+	padding-right: 1em;
+	clear: both;
+	display: inline-block;
+}
+
+
+/* menos de 600px width*/
+
+@media screen and (max-width: 600px)
+{
+
+	.container
+	{
+		width: 95%;
+
+	}
+
+	body
+	{
+		/* to do: datos abajo de la foto | nombre centrado y quieto | articles y sus titulos hacia abajo */
+	}
+
+	#profile-pic
+	{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 50%;
+		float: none;
+	}
+
+	.datos
+	{
+		margin-top: 2em;
+		text-align: left;
+	}
+}
